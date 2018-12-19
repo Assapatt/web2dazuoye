@@ -733,3 +733,111 @@ html{
 .bottom_img{
 	float: left;
 }
+/*侧边滑出*/
+.index_slide{
+	z-index: 2000;
+	overflow: hidden;
+	position: fixed;
+	right: 0;
+	top: 55px;
+	height: 105px;
+	width: 130px;
+	/*background-color: #ff9260;*/
+}
+.first_slidebar{
+	z-index: 2000;
+	height: 105px;
+	width: 123px;
+	margin-left: 85px;
+	/*background-color: red;*/
+}
+.first_slidebar img{
+	display: block;
+	float: top;
+}
+
+.index_slide2{
+	z-index: 2000;
+	overflow: hidden;
+	position: fixed;
+	right: 0;
+	top: 165px;
+	height: 140px;
+	width: 130px;
+	/*background-color: #ff9260;*/
+}
+.second_slidebar{
+	z-index: 2000;
+	height: 140px;
+	width: 130px;
+	margin-left: 85px;
+	background-color: #ff9260;
+}
+.second_slidebar img{
+	display: block;
+	float: left;
+}
+.inside{
+	float: left;
+	height: 140px;
+	width: 70px;
+}
+.inside p{
+	margin-top: 40px;
+	text-align: center;
+	font-size: 14px;
+	color: #ffffff
+}
+.inside span{
+	display: block;
+	text-align: center;
+	width: 30px;
+	height: 20px;
+	margin-top: 20px;
+	margin-left: 22px;
+	font-size: 12px;
+	color: #ffffff;
+	border:1px solid #ffffff;
+	border-radius: 3px;
+}
+
+.index_slide3{
+	z-index: 2000;
+	overflow: hidden;
+	position: fixed;
+	right: 0;
+	top: 310px;
+	height: 150px;
+	width: 130px;
+	/*background-color: #ff9260;*/
+}
+.third_slidebar{
+	z-index: 2000;
+	height: 150px;
+	width: 130px;
+	margin-left: 85px;
+	background-color: #ff9260;
+}
+.third_slidebar img{
+	float: top;
+}
+#serwei{
+	margin-left: 13px;
+	margin-top: 40px;
+}
+
+.index_slide4{
+	overflow: hidden;
+	position: fixed;
+	right: 0;
+	top: 465px;
+	height: 140px;
+	width: 130px;
+	/*background-color: #ff9260;*/
+}
+.fourth_slidebar{
+	height: 140px;
+	width: 123px;
+	margin-left: 85px;
+	background-color: #ff9260;
+}

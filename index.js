@@ -5,7 +5,7 @@ window.onload = function(){
 		var st = document.documentElement.scrollTop || document.body.scrollTop;
 		if(st>180){
 			cover.style.position = 'fixed';
-			cover.style.zIndex = 10000;
+			cover.style.zIndex = 1000;
 		}else{
 			cover.style.position = 'static';
 		}
@@ -184,3 +184,113 @@ function getStyle(obj, attr) { //返回值带有单位px
                 area.onmouseout=function(){
                     mytimer=setInterval(scrollUp,time);
                 }
+
+//侧边滑出
+function huachu(){
+		var box = document.getElementById('box1');
+        var dest=7;
+		var timer = setInterval(function () {
+			var now = parseInt(getStyle(box, "marginLeft"));
+			if (now == dest) {
+				clearInterval(timer);
+			} else {
+				box.style.marginLeft= now - 1 + "px";
+			}
+		}, 1);
+}
+function huaru(){
+	var box = document.getElementById('box1');
+        var dest=85;
+		var timer = setInterval(function () {
+			var now = parseInt(getStyle(box, "marginLeft"));
+			if (now == dest) {
+				clearInterval(timer);
+			} else {
+				box.style.marginLeft= now + 1 + "px";
+				now = now+1;
+			}
+		}, 5);
+} 
+function huachu_youhui(){
+		var box = document.getElementById('box2');
+        var dest=0;
+		var timer = setInterval(function () {
+			var now = parseInt(getStyle(box, "marginLeft"));
+			if (now == dest) {
+				clearInterval(timer);
+			} else {
+				box.style.marginLeft= now - 1 + "px";
+			}
+		}, 1);
+}
+function huaru_youhui(){
+	var box = document.getElementById('box2');
+        var dest=85;
+		var timer = setInterval(function () {
+			var now = parseInt(getStyle(box, "marginLeft"));
+			if (now == dest) {
+				clearInterval(timer);
+			} else {
+				box.style.marginLeft= now + 1 + "px";
+				now = now+1;
+			}
+		}, 5);
+}
+
+function huachu_ewm(){
+		var box = document.getElementById('box3');
+        var dest=0;
+        var erwei = document.getElementById('serwei');
+        erwei.src = "img/erwei.png";
+        erwei.style.marginTop = 0;
+		var timer = setInterval(function () {
+			var now = parseInt(getStyle(box, "marginLeft"));
+			if (now == dest) {
+				clearInterval(timer);
+			} else {
+				box.style.marginLeft= now - 1 + "px";
+			}
+		}, 1);
+}
+function huaru_ewm(){
+		var box = document.getElementById('box3');
+		var erwei = document.getElementById('serwei');
+        erwei.src = "img/serwei.png";
+        erwei.style.marginTop = "40px";
+        var dest=85;
+		var timer = setInterval(function () {
+			var now = parseInt(getStyle(box, "marginLeft"));
+			if (now == dest) {
+				clearInterval(timer);
+			} else {
+				box.style.marginLeft= now + 1 + "px";
+				now = now+1;
+			}
+		}, 5);
+}
+function huachu_car(){
+		var box = document.getElementById('box4');
+        var dest=7;
+		var timer = setInterval(function () {
+			var now = parseInt(getStyle(box, "marginLeft"));
+			if (now == dest) {
+				clearInterval(timer);
+			} else {
+				box.style.marginLeft= now - 1 + "px";
+			}
+		}, 1);
+}
+function huaru_car(){
+	var box = document.getElementById('box4');
+        var dest=85;
+		var timer = setInterval(function () {
+			var now = parseInt(getStyle(box, "marginLeft"));
+			if (now == dest) {
+				clearInterval(timer);
+			} else {
+				box.style.marginLeft= now + 1 + "px";
+				now = now+1;
+			}
+		}, 5);
+} 
+    
